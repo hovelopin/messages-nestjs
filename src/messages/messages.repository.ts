@@ -1,5 +1,7 @@
 import { readFile, writeFile } from 'fs/promises';
+import { Injectable } from '@nestjs/common';
 
+@Injectable()
 export class MessagesRepository {
   // 비동기!
   async findOne(id: string) {
